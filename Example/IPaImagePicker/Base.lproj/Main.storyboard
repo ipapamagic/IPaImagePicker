@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="IPaImagePicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xy-Xk-UkS">
+                                <rect key="frame" x="144" y="60" width="87" height="30"/>
+                                <state key="normal" title="Pick a image"/>
+                                <connections>
+                                    <action selector="onPickImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7oj-KY-9N3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L11-YW-C2Z">
+                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="L11-YW-C2Z" secondAttribute="trailing" id="awf-cT-TWP"/>
+                            <constraint firstItem="L11-YW-C2Z" firstAttribute="top" secondItem="8Xy-Xk-UkS" secondAttribute="bottom" constant="20" id="bpc-Ov-xNc"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="L11-YW-C2Z" secondAttribute="bottom" id="gA6-5n-bOj"/>
+                            <constraint firstItem="L11-YW-C2Z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="kK2-vP-FgE"/>
+                            <constraint firstItem="8Xy-Xk-UkS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="kf6-J4-vKJ"/>
+                            <constraint firstItem="8Xy-Xk-UkS" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="uOy-9g-ifB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultImageView" destination="L11-YW-C2Z" id="Ce5-dx-4gO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>

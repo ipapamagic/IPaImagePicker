@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/ipapamagic/IPaPods.git'
+use_frameworks!
+
+target 'IPaImagePicker_Example' do
+  pod 'IPaImagePicker', :path => '../'
+
+  target 'IPaImagePicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gcv-O5-vZ6" customClass="IPaImagePickerCollectionViewCell" customModule="IPaImagePicker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="252" height="245"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZNa-rM-QeN">
+                        <rect key="frame" x="0.0" y="0.0" width="252" height="245"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwt-rC-fmv" customClass="IPaIndexButton" customModule="IPaImagePicker" customModuleProvider="target">
+                        <rect key="frame" x="209" y="8" width="35" height="35"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="5dd-3P-4NS"/>
+                            <constraint firstAttribute="height" constant="35" id="tYY-RS-Vf9"/>
+                        </constraints>
+                        <connections>
+                            <action selector="onTapMarkerButton:" destination="gcv-O5-vZ6" eventType="touchUpInside" id="fiz-gH-6NV"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZNa-rM-QeN" firstAttribute="top" secondItem="gcv-O5-vZ6" secondAttribute="top" id="C5R-rx-TSp"/>
+                <constraint firstAttribute="trailing" secondItem="ZNa-rM-QeN" secondAttribute="trailing" id="CqJ-qy-ntX"/>
+                <constraint firstAttribute="bottom" secondItem="ZNa-rM-QeN" secondAttribute="bottom" id="Qqr-ZL-dUh"/>
+                <constraint firstAttribute="trailing" secondItem="Bwt-rC-fmv" secondAttribute="trailing" constant="8" id="RLb-lv-1bM"/>
+                <constraint firstItem="ZNa-rM-QeN" firstAttribute="leading" secondItem="gcv-O5-vZ6" secondAttribute="leading" id="aKy-dx-gfK"/>
+                <constraint firstItem="Bwt-rC-fmv" firstAttribute="top" secondItem="gcv-O5-vZ6" secondAttribute="top" constant="8" id="uDN-qr-LDh"/>
+            </constraints>
+            <size key="customSize" width="252" height="245"/>
+            <connections>
+                <outlet property="markerButton" destination="Bwt-rC-fmv" id="4Lp-5k-OrU"/>
+                <outlet property="photoImageView" destination="ZNa-rM-QeN" id="W2z-6f-teL"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="47.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

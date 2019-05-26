@@ -1,0 +1,56 @@
+PODS:
+  - IPaAVCamera (2.2)
+  - IPaBlockOperation (2.3)
+  - IPaDesignableUI (3.6):
+    - IPaDownloadManager (~> 1.0)
+  - IPaDownloadManager (1.0):
+    - IPaSecurity (~> 3.1)
+  - IPaImagePicker (1.0):
+    - IPaAVCamera
+    - IPaBlockOperation
+    - IPaDesignableUI
+    - IPaImagePreviewer
+    - IPaImageTool
+    - IPaIndicator
+  - IPaImagePreviewer (3.2):
+    - IPaIndicator
+  - IPaImageTool (2.3)
+  - IPaIndicator (3.3)
+  - IPaLog (2.3)
+  - IPaSecurity (3.1):
+    - IPaLog (>= 2.1)
+
+DEPENDENCIES:
+  - IPaImagePicker (from `../`)
+
+SPEC REPOS:
+  https://github.com/ipapamagic/IPaPods.git:
+    - IPaAVCamera
+    - IPaBlockOperation
+    - IPaDesignableUI
+    - IPaDownloadManager
+    - IPaImagePreviewer
+    - IPaImageTool
+    - IPaIndicator
+    - IPaLog
+    - IPaSecurity
+
+EXTERNAL SOURCES:
+  IPaImagePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IPaAVCamera: 777771eaf7885e994f57ec30f86d44f9798b26ee
+  IPaBlockOperation: 5642f2e4034d3356cf196514a84027f48488ae7c
+  IPaDesignableUI: 85dae86322d2c42279d1bcb6114b8fd8f43189bc
+  IPaDownloadManager: da86956abb8a6f31ca35b2b9eb8148f4363b47f0
+  IPaImagePicker: 407b9a36fd025dd86a0ce81739687de91c5ff738
+  IPaImagePreviewer: 61f945e9c5254a6edf2a5e0ff15e88b230501792
+  IPaImageTool: d86f9be4f2b1a461afda64da130478b0874920ee
+  IPaIndicator: b7c9369f5ced8f1bac4ca9d49d6cee604dcd2bc9
+  IPaLog: 94e55e52fa0a4c3954ae8bf19bb56291d4d7ccb8
+  IPaSecurity: 0abd374149fd917d01c6845854a924b5bc79de17
+
+PODFILE CHECKSUM: ed2a00bd8091b3f73f8c063808ee48af820b7c84
+
+COCOAPODS: 1.7.0.beta.2
